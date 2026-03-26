@@ -1,0 +1,14 @@
+{
+  "name": "vocab-system",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "dev:web": "pnpm --filter @vocab/web dev",
+    "dev:server": "pnpm --filter @vocab/server dev",
+    "dev": "pnpm -r --parallel dev",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:seed": "pnpm --filter @vocab/server db:seed"
+  }
+}
